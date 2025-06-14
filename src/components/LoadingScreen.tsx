@@ -30,11 +30,11 @@ const LoadingScreen = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-orange-100 via-amber-100 to-yellow-100 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-gradient-to-br from-sunny-100 via-golden-100 to-warm-100 flex items-center justify-center z-50">
       <div className="text-center space-y-8">
         <div className="relative">
-          <div className="text-6xl animate-bounce">🐰</div>
-          <div className="absolute -top-2 -right-2 text-2xl animate-spin">✨</div>
+          <div className="text-6xl animate-bounce" style={{ animationDuration: '2s' }}>🐰</div>
+          <div className="absolute -top-2 -right-2 text-2xl animate-spin" style={{ animationDuration: '3s' }}>✨</div>
         </div>
         
         <div className="space-y-4">
@@ -44,7 +44,7 @@ const LoadingScreen = () => {
           
           <div className="w-80 bg-white/50 backdrop-blur rounded-full h-3 overflow-hidden">
             <div 
-              className="h-full bg-gradient-to-r from-orange-400 to-amber-500 rounded-full transition-all duration-300 ease-out relative"
+              className="h-full bg-gradient-to-r from-sunny-400 to-golden-500 rounded-full transition-all duration-300 ease-out relative"
               style={{ width: `${progress}%` }}
             >
               <div className="absolute right-0 top-0 w-6 h-full bg-white/30 animate-pulse rounded-full"></div>

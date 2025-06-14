@@ -27,7 +27,12 @@ const Index = () => {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen transition-colors duration-300 bg-gradient-to-br from-rose-50 via-coral-50 to-peach-50 dark:from-rose-900 dark:via-coral-900 dark:to-peach-800 relative overflow-hidden">
+      <div className="min-h-screen transition-colors duration-300 relative overflow-hidden">
+        {/* Animated gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 dark:from-amber-900/20 dark:via-yellow-900/20 dark:to-orange-900/20 animate-pulse" style={{ animationDuration: '8s' }}></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-yellow-100/30 to-amber-100/30 dark:from-transparent dark:via-yellow-800/10 dark:to-amber-800/10 animate-pulse" style={{ animationDuration: '12s', animationDelay: '2s' }}></div>
+        <div className="absolute inset-0 bg-gradient-to-bl from-orange-100/20 via-transparent to-yellow-100/20 dark:from-orange-800/5 dark:via-transparent dark:to-yellow-800/5 animate-pulse" style={{ animationDuration: '10s', animationDelay: '4s' }}></div>
+        
         <BackgroundElements />
         <Navigation />
         <Routes>
