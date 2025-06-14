@@ -52,10 +52,10 @@ const ContactPage = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white/80 dark:bg-gray-800/80 backdrop-blur rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-rotate-1 block"
+              className="bg-white/80 dark:bg-gray-800/80 backdrop-blur rounded-3xl p-6 shadow-xl block"
             >
               <div className="flex items-center space-x-4 mb-4">
-                <div className={`p-4 bg-gradient-to-r ${link.color} rounded-2xl text-2xl group-hover:scale-110 transition-transform`}>
+                <div className={`p-4 bg-gradient-to-r ${link.color} rounded-2xl text-2xl`}>
                   {link.icon}
                 </div>
                 <div>
@@ -67,7 +67,7 @@ const ContactPage = () => {
                   </p>
                 </div>
               </div>
-              <div className={`w-full h-1 bg-gradient-to-r ${link.color} rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left`}></div>
+              <div className={`w-full h-1 bg-gradient-to-r ${link.color} rounded-full`}></div>
             </a>
           ))}
         </div>

@@ -30,7 +30,7 @@ const AboutPage = () => {
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-sunny-500 to-golden-600 bg-clip-text text-transparent mb-6">
             LORE
           </h1>
-          <div className="max-w-3xl mx-auto bg-white/80 dark:bg-gray-800/80 backdrop-blur rounded-3xl p-8 shadow-xl hover:scale-105 transition-all duration-300">
+          <div className="max-w-3xl mx-auto bg-white/80 dark:bg-gray-800/80 backdrop-blur rounded-3xl p-8 shadow-xl">
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
               UX Designer by degree. Bunny by reputation. I design pixels that feel right. 
               <span className="block mt-4 text-lg">
@@ -48,9 +48,9 @@ const AboutPage = () => {
           {timeline.map((item, index) => (
             <div 
               key={index}
-              className="group flex items-center space-x-6 bg-white/70 dark:bg-gray-800/70 backdrop-blur rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="flex items-center space-x-6 bg-white/70 dark:bg-gray-800/70 backdrop-blur rounded-2xl p-6 shadow-lg"
             >
-              <div className="text-4xl group-hover:scale-125 transition-transform">
+              <div className="text-4xl">
                 {item.icon}
               </div>
               <div className="flex-1">
@@ -76,19 +76,19 @@ const AboutPage = () => {
               Fun Facts About Me 🐰
             </h3>
             <div className="grid md:grid-cols-2 gap-4 text-left">
-              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-4 hover:scale-105 transition-transform">
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-4">
                 <span className="text-2xl">🎵</span>
                 <p className="text-gray-700 dark:text-gray-300 mt-2">Creates design systems while jamming to K-pop</p>
               </div>
-              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-4 hover:scale-105 transition-transform">
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-4">
                 <span className="text-2xl">☕</span>
                 <p className="text-gray-700 dark:text-gray-300 mt-2">Fueled by chai and creative chaos</p>
               </div>
-              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-4 hover:scale-105 transition-transform">
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-4">
                 <span className="text-2xl">🎯</span>
                 <p className="text-gray-700 dark:text-gray-300 mt-2">Believes every pixel has a purpose</p>
               </div>
-              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-4 hover:scale-105 transition-transform">
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-4">
                 <span className="text-2xl">🌙</span>
                 <p className="text-gray-700 dark:text-gray-300 mt-2">Night owl who dreams in wireframes</p>
               </div>

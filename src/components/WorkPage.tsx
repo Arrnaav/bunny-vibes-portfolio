@@ -43,11 +43,11 @@ const WorkPage = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className={`group bg-gradient-to-br ${project.bgColor} backdrop-blur rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer`}
+              className={`bg-gradient-to-br ${project.bgColor} backdrop-blur rounded-3xl p-8 shadow-xl cursor-pointer`}
             >
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <span className="text-4xl group-hover:scale-125 transition-transform">
+                  <span className="text-4xl">
                     {project.icon}
                   </span>
                   <span className="text-sm bg-white/50 dark:bg-gray-800/50 px-3 py-1 rounded-full">
@@ -72,7 +72,7 @@ const WorkPage = () => {
                   {project.keywords.map((keyword, keyIndex) => (
                     <span 
                       key={keyIndex}
-                      className="bg-white/70 dark:bg-gray-800/70 px-3 py-1 rounded-full text-sm text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform"
+                      className="bg-white/70 dark:bg-gray-800/70 px-3 py-1 rounded-full text-sm text-gray-700 dark:text-gray-300"
                     >
                       {keyword}
                     </span>
@@ -81,7 +81,7 @@ const WorkPage = () => {
 
                 <button 
                   onClick={() => window.open(project.prototype, '_blank')}
-                  className={`w-full bg-gradient-to-r ${project.color} text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105`}
+                  className={`w-full bg-gradient-to-r ${project.color} text-white py-4 rounded-2xl font-bold text-lg shadow-lg`}
                 >
                   View Interactive Prototype →
                 </button>
