@@ -12,7 +12,7 @@ const CursorTrail = () => {
       
       setTrail(prev => {
         const updated = [...prev, newTrail];
-        return updated.length > 10 ? updated.slice(-10) : updated;
+        return updated.length > 6 ? updated.slice(-6) : updated;
       });
     };
 
@@ -20,7 +20,7 @@ const CursorTrail = () => {
     
     const cleanup = setInterval(() => {
       setTrail(prev => prev.slice(1));
-    }, 100);
+    }, 150);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
@@ -33,13 +33,13 @@ const CursorTrail = () => {
       {trail.map((point, index) => (
         <div
           key={point.id}
-          className="absolute w-2 h-2 bg-gradient-to-r from-orange-400 to-red-500 rounded-full"
+          className="absolute w-1 h-1 bg-gradient-to-r from-orange-400/30 to-red-500/30 rounded-full"
           style={{
-            left: point.x - 4,
-            top: point.y - 4,
-            opacity: (index + 1) / trail.length * 0.6,
-            transform: `scale(${(index + 1) / trail.length})`,
-            transition: 'opacity 0.3s ease-out, transform 0.3s ease-out',
+            left: point.x - 2,
+            top: point.y - 2,
+            opacity: (index + 1) / trail.length * 0.3,
+            transform: `scale(${(index + 1) / trail.length * 0.8})`,
+            transition: 'opacity 0.4s ease-out, transform 0.4s ease-out',
           }}
         />
       ))}
