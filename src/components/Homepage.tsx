@@ -1,11 +1,13 @@
 
 import React from 'react';
 import FloatingBunny from './FloatingBunny';
+import BackgroundElements from './BackgroundElements';
 
 const Homepage = () => {
   return (
     <div className="min-h-screen pt-20 flex items-center justify-center relative overflow-hidden">
       <FloatingBunny />
+      <BackgroundElements />
       
       <div className="text-center z-10 px-6 max-w-4xl">
         <div className="space-y-8 animate-fade-in">
