@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const AboutPage = () => {
@@ -26,9 +25,9 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen pt-24 pb-16 px-6">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-6">
-            CTRL + ME
+            LORE
           </h1>
           <div className="max-w-3xl mx-auto bg-white/80 dark:bg-gray-800/80 backdrop-blur rounded-3xl p-8 shadow-xl hover:scale-105 transition-all duration-300">
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
