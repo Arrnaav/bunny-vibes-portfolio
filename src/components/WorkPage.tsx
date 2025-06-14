@@ -43,7 +43,7 @@ const WorkPage = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className={`bg-gradient-to-br ${project.bgColor} backdrop-blur rounded-3xl p-8 shadow-xl cursor-pointer`}
+              className={`bg-gradient-to-br ${project.bgColor} rounded-3xl p-8 shadow-xl cursor-pointer`}
             >
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
@@ -91,7 +91,7 @@ const WorkPage = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur rounded-3xl p-8 shadow-xl">
+          <div className="bg-white/70 dark:bg-gray-800/70 rounded-3xl p-8 shadow-xl">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
               More Projects Coming Soon! 🚀
             </h3>

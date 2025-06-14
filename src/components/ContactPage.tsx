@@ -52,7 +52,7 @@ const ContactPage = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white/80 dark:bg-gray-800/80 backdrop-blur rounded-3xl p-6 shadow-xl block"
+              className="bg-white/80 dark:bg-gray-800/80 rounded-3xl p-6 shadow-xl block"
             >
               <div className="flex items-center space-x-4 mb-4">
                 <div className={`p-4 bg-gradient-to-r ${link.color} rounded-2xl text-2xl`}>
@@ -73,7 +73,7 @@ const ContactPage = () => {
         </div>
 
         <div className="text-center">
-          <div className="bg-gradient-to-r from-sunny-100 to-golden-100 dark:from-sunny-900/30 dark:to-golden-900/30 rounded-3xl p-8 backdrop-blur">
+          <div className="bg-gradient-to-r from-sunny-100 to-golden-100 dark:from-sunny-900/30 dark:to-golden-900/30 rounded-3xl p-8">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
               Let's Create Something Amazing Together! ✨
             </h3>

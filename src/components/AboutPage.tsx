@@ -30,7 +30,7 @@ const AboutPage = () => {
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-sunny-500 to-golden-600 bg-clip-text text-transparent mb-6">
             LORE
           </h1>
-          <div className="max-w-3xl mx-auto bg-white/80 dark:bg-gray-800/80 backdrop-blur rounded-3xl p-8 shadow-xl">
+          <div className="max-w-3xl mx-auto bg-white/80 dark:bg-gray-800/80 rounded-3xl p-8 shadow-xl">
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
               UX Designer by degree. Bunny by reputation. I design pixels that feel right. 
               <span className="block mt-4 text-lg">
@@ -48,7 +48,7 @@ const AboutPage = () => {
           {timeline.map((item, index) => (
             <div 
               key={index}
-              className="flex items-center space-x-6 bg-white/70 dark:bg-gray-800/70 backdrop-blur rounded-2xl p-6 shadow-lg"
+              className="flex items-center space-x-6 bg-white/70 dark:bg-gray-800/70 rounded-2xl p-6 shadow-lg"
             >
               <div className="text-4xl">
                 {item.icon}
@@ -71,7 +71,7 @@ const AboutPage = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-sunny-100 to-golden-100 dark:from-sunny-900/30 dark:to-golden-900/30 rounded-3xl p-8 backdrop-blur">
+          <div className="bg-gradient-to-r from-sunny-100 to-golden-100 dark:from-sunny-900/30 dark:to-golden-900/30 rounded-3xl p-8">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
               Fun Facts About Me 🐰
             </h3>
