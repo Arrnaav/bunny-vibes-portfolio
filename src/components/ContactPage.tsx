@@ -1,0 +1,105 @@
+
+import React from 'react';
+
+const ContactPage = () => {
+  const contactLinks = [
+    {
+      platform: "WhatsApp",
+      icon: "📞",
+      url: "https://wa.me/917083245713",
+      description: "Quick chat? I'm usually online!",
+      color: "from-green-400 to-green-600"
+    },
+    {
+      platform: "Email",
+      icon: "📧",
+      url: "mailto:padmakaar.work@gmail.com",
+      description: "For the formal stuff",
+      color: "from-blue-400 to-blue-600"
+    },
+    {
+      platform: "LinkedIn",
+      icon: "💼",
+      url: "https://linkedin.com/in/padmakaarwork",
+      description: "Let's connect professionally",
+      color: "from-indigo-400 to-indigo-600"
+    },
+    {
+      platform: "Resume",
+      icon: "📄",
+      url: "#",
+      description: "All the boring details",
+      color: "from-purple-400 to-purple-600"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen pt-24 pb-16 px-6">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-16 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-6">
+            Let's Vibe
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8">
+            Slide into my inbox or DMs. I promise I won't ghost. 👻
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
+          {contactLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white/80 dark:bg-gray-800/80 backdrop-blur rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-rotate-1 block"
+            >
+              <div className="flex items-center space-x-4 mb-4">
+                <div className={`p-4 bg-gradient-to-r ${link.color} rounded-2xl text-2xl group-hover:scale-110 transition-transform`}>
+                  {link.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                    {link.platform}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    {link.description}
+                  </p>
+                </div>
+              </div>
+              <div className={`w-full h-1 bg-gradient-to-r ${link.color} rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left`}></div>
+            </a>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <div className="bg-gradient-to-r from-pink-100 to-purple-100 dark:from-pink-900/30 dark:to-purple-900/30 rounded-3xl p-8 backdrop-blur">
+            <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+              Let's Create Something Amazing Together! ✨
+            </h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-6">
+              Whether it's a quick chat about design, a collaboration opportunity, or just to say hi - I'm all ears! 🐰
+            </p>
+            <div className="flex justify-center items-center space-x-2">
+              <span className="animate-pulse">💌</span>
+              <span className="text-gray-700 dark:text-gray-300">Response time: Usually within 24 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <footer className="mt-16 text-center">
+          <p className="text-gray-600 dark:text-gray-400 italic">
+            "Made with love, Figma, and one too many Ctrl+Zs."
+          </p>
+          <div className="flex justify-center space-x-2 mt-4">
+            <span className="animate-bounce">🐰</span>
+            <span className="animate-bounce delay-100">💖</span>
+            <span className="animate-bounce delay-200">✨</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  );
+};
+
+export default ContactPage;
