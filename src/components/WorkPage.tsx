@@ -5,99 +5,103 @@ const WorkPage = () => {
   const projects = [
     {
       title: "Broke Buddy",
-      desc: "Your friendly neighborhood expense tracker that won't judge your latte addiction",
-      tech: ["Figma", "Design Systems", "User Research"],
-      bgColor: "from-sunny-100 to-golden-100 dark:from-sunny-900/30 dark:to-golden-900/30",
-      status: "Live & Thriving"
+      subtitle: "Mobile App",
+      description: "A student-focused budgeting app designed to help college students track, plan, and thrive financially.",
+      keywords: ["student-first", "track, plan, thrive", "UI/UX for broke buddies everywhere"],
+      date: "April 2024",
+      color: "from-green-400 to-blue-500",
+      bgColor: "from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20",
+      icon: "💰",
+      prototype: "#"
     },
     {
       title: "Nivara",
-      desc: "Meditation app that makes mindfulness less intimidating and more... chill",
-      tech: ["UX Design", "Prototyping", "User Testing"],
-      bgColor: "from-golden-100 to-warm-100 dark:from-golden-900/30 dark:to-warm-900/30",
-      status: "In Progress"
-    },
-    {
-      title: "Secret Project #3",
-      desc: "Something amazing is brewing... can't spill the tea just yet ☕",
-      tech: ["Coming Soon", "Top Secret", "Much Wow"],
-      bgColor: "from-warm-100 to-sunny-100 dark:from-warm-900/30 dark:to-sunny-900/30",
-      status: "Sketching Phase"
+      subtitle: "VR for Mental Health",
+      description: "A VR app built to help people with anxiety and depression through calming environments. Built during final year as a graduation project.",
+      keywords: ["healing through design", "VR calm spaces", "serious UX for serious peace"],
+      date: "2025",
+      color: "from-purple-400 to-pink-500",
+      bgColor: "from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20",
+      icon: "🧘",
+      prototype: "#"
     }
   ];
 
   return (
-    <div className="min-h-screen pt-24 pb-16 px-6 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 dark:from-amber-900/20 dark:via-yellow-900/20 dark:to-orange-900/20">
+    <div className="min-h-screen pt-24 pb-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-sunny-500 to-golden-600 bg-clip-text text-transparent mb-6">
+        <div className="text-center mb-16 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-6">
             My Work
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8">
-            Projects that made me lose sleep (but in a good way)
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            Two projects that showcase my journey from student problems to serious solutions ✨
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index}
-              className={`bg-gradient-to-br ${project.bgColor} rounded-3xl p-8 shadow-xl`}
+              className={`group bg-gradient-to-br ${project.bgColor} backdrop-blur rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer`}
             >
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
-                    {project.title}
-                  </h3>
-                  <span className="bg-white dark:bg-gray-800 text-sunny-600 dark:text-sunny-400 px-3 py-1 rounded-full text-sm font-medium">
-                    {project.status}
+                  <span className="text-4xl group-hover:scale-125 transition-transform">
+                    {project.icon}
+                  </span>
+                  <span className="text-sm bg-white/50 dark:bg-gray-800/50 px-3 py-1 rounded-full">
+                    {project.date}
                   </span>
                 </div>
-                
+
+                <div>
+                  <h2 className={`text-3xl font-bold bg-gradient-to-r ${project.color} bg-clip-text text-transparent mb-2`}>
+                    {project.title}
+                  </h2>
+                  <p className="text-lg text-gray-600 dark:text-gray-400 font-medium">
+                    {project.subtitle}
+                  </p>
+                </div>
+
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {project.desc}
+                  {project.description}
                 </p>
-                
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, techIndex) => (
+
+                <div className="flex flex-wrap gap-3">
+                  {project.keywords.map((keyword, keyIndex) => (
                     <span 
-                      key={techIndex}
-                      className="bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm"
+                      key={keyIndex}
+                      className="bg-white/70 dark:bg-gray-800/70 px-3 py-1 rounded-full text-sm text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform"
                     >
-                      {tech}
+                      {keyword}
                     </span>
                   ))}
                 </div>
-                
-                <div className="pt-4">
-                  <div className="w-full bg-white dark:bg-gray-800 rounded-full h-2">
-                    <div 
-                      className="bg-gradient-to-r from-sunny-400 to-golden-500 h-2 rounded-full"
-                      style={{ 
-                        width: project.status === 'Live & Thriving' ? '100%' : 
-                               project.status === 'In Progress' ? '70%' : '30%' 
-                      }}
-                    ></div>
-                  </div>
-                </div>
+
+                <button 
+                  onClick={() => window.open(project.prototype, '_blank')}
+                  className={`w-full bg-gradient-to-r ${project.color} text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 group-hover:animate-pulse`}
+                >
+                  View Interactive Prototype →
+                </button>
               </div>
             </div>
           ))}
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl">
+          <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur rounded-3xl p-8 shadow-xl">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
               More Projects Coming Soon! 🚀
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-6">
-              Currently brewing some exciting ideas. Stay tuned for more pixel magic!
+            <p className="text-gray-600 dark:text-gray-400">
+              Currently brewing some exciting new ideas in my design lab...
             </p>
-            <div className="flex justify-center space-x-2">
-              <span>✨</span>
-              <span>🎨</span>
-              <span>💻</span>
-              <span>🚀</span>
+            <div className="flex justify-center space-x-4 mt-6">
+              <div className="w-3 h-3 bg-pink-400 rounded-full animate-bounce"></div>
+              <div className="w-3 h-3 bg-purple-400 rounded-full animate-bounce delay-100"></div>
+              <div className="w-3 h-3 bg-blue-400 rounded-full animate-bounce delay-200"></div>
             </div>
           </div>
         </div>

@@ -1,8 +1,11 @@
+
 import React from 'react';
 import FloatingBunny from './FloatingBunny';
 import BackgroundElements from './BackgroundElements';
+
 const Homepage = () => {
-  return <div className="min-h-screen pt-20 flex items-center justify-center relative overflow-hidden">
+  return (
+    <div className="min-h-screen pt-20 flex items-center justify-center relative overflow-hidden">
       <FloatingBunny />
       <BackgroundElements />
       
@@ -12,19 +15,15 @@ const Homepage = () => {
             <p className="text-3xl md:text-4xl text-gray-700 dark:text-gray-300 font-medium">
               Hi! I'm
             </p>
-            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-sunny-500 via-golden-500 to-warm-500 bg-clip-text text-transparent hover:scale-105 transition-transform cursor-default text-center">
+            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-sunny-500 via-golden-500 to-warm-500 bg-clip-text text-transparent hover:scale-105 transition-transform cursor-default">
               Padmakaar Khobragade
             </h1>
-            <div className="absolute -top-4 -right-4 text-4xl animate-pulse" style={{
-            animationDuration: '4s'
-          }}>🌟</div>
+            <div className="absolute -top-4 -right-4 text-4xl animate-pulse" style={{ animationDuration: '4s' }}>🌟</div>
           </div>
           
           <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 font-medium leading-relaxed">
             but you can call me{' '}
-            <span className="bg-gradient-to-r from-sunny-400 to-golden-500 bg-clip-text text-transparent font-bold text-4xl animate-pulse" style={{
-            animationDuration: '3s'
-          }}>
+            <span className="bg-gradient-to-r from-sunny-400 to-golden-500 bg-clip-text text-transparent font-bold text-4xl animate-pulse" style={{ animationDuration: '3s' }}>
               BUNNY
             </span>
           </p>
@@ -47,28 +46,24 @@ const Homepage = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
             <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-sunny-600 dark:hover:text-sunny-400 transition-all duration-300 hover:scale-110 cursor-default group">
-              <span className="animate-pulse group-hover:animate-bounce transition-all duration-300" style={{
-              animationDuration: '2s'
-            }}>🎨</span>
+              <span className="animate-pulse group-hover:animate-bounce transition-all duration-300" style={{ animationDuration: '2s' }}>🎨</span>
               <span className="group-hover:font-semibold transition-all duration-300">UX Designer</span>
             </div>
             <div className="hidden sm:block w-2 h-2 bg-sunny-400 rounded-full"></div>
             <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-golden-600 dark:hover:text-golden-400 transition-all duration-300 hover:scale-110 cursor-default group">
-              <span className="animate-pulse group-hover:animate-bounce transition-all duration-300" style={{
-              animationDuration: '2.5s'
-            }}>✨</span>
+              <span className="animate-pulse group-hover:animate-bounce transition-all duration-300" style={{ animationDuration: '2.5s' }}>✨</span>
               <span className="group-hover:font-semibold transition-all duration-300">Pixel Perfectionist</span>
             </div>
             <div className="hidden sm:block w-2 h-2 bg-golden-400 rounded-full"></div>
             <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-warm-600 dark:hover:text-warm-400 transition-all duration-300 hover:scale-110 cursor-default group">
-              <span className="animate-pulse group-hover:animate-bounce transition-all duration-300" style={{
-              animationDuration: '3s'
-            }}>🚀</span>
+              <span className="animate-pulse group-hover:animate-bounce transition-all duration-300" style={{ animationDuration: '3s' }}>🚀</span>
               <span className="group-hover:font-semibold transition-all duration-300">Problem Solver</span>
             </div>
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Homepage;

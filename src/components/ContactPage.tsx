@@ -8,36 +8,36 @@ const ContactPage = () => {
       icon: "📞",
       url: "https://wa.me/917083245713",
       description: "Quick chat? I'm usually online!",
-      color: "from-sunny-400 to-golden-500"
+      color: "from-green-400 to-green-600"
     },
     {
       platform: "Email",
       icon: "📧",
       url: "mailto:padmakaar.work@gmail.com",
       description: "For the formal stuff",
-      color: "from-golden-400 to-warm-500"
+      color: "from-blue-400 to-blue-600"
     },
     {
       platform: "LinkedIn",
       icon: "💼",
       url: "https://linkedin.com/in/padmakaarwork",
       description: "Let's connect professionally",
-      color: "from-warm-400 to-sunny-500"
+      color: "from-indigo-400 to-indigo-600"
     },
     {
       platform: "Resume",
       icon: "📄",
       url: "#",
       description: "All the boring details",
-      color: "from-sunny-500 to-golden-600"
+      color: "from-purple-400 to-purple-600"
     }
   ];
 
   return (
-    <div className="min-h-screen pt-24 pb-16 px-6 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 dark:from-amber-900/20 dark:via-yellow-900/20 dark:to-orange-900/20">
+    <div className="min-h-screen pt-24 pb-16 px-6">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-sunny-500 to-golden-600 bg-clip-text text-transparent mb-6">
+        <div className="text-center mb-16 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-6">
             Let's Vibe
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8">
@@ -52,10 +52,10 @@ const ContactPage = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-xl block"
+              className="group bg-white/80 dark:bg-gray-800/80 backdrop-blur rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-rotate-1 block"
             >
               <div className="flex items-center space-x-4 mb-4">
-                <div className={`p-4 bg-gradient-to-r ${link.color} rounded-2xl text-2xl`}>
+                <div className={`p-4 bg-gradient-to-r ${link.color} rounded-2xl text-2xl group-hover:scale-110 transition-transform`}>
                   {link.icon}
                 </div>
                 <div>
@@ -67,13 +67,13 @@ const ContactPage = () => {
                   </p>
                 </div>
               </div>
-              <div className={`w-full h-1 bg-gradient-to-r ${link.color} rounded-full`}></div>
+              <div className={`w-full h-1 bg-gradient-to-r ${link.color} rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left`}></div>
             </a>
           ))}
         </div>
 
         <div className="text-center">
-          <div className="bg-gradient-to-r from-sunny-100 to-golden-100 dark:from-sunny-900/30 dark:to-golden-900/30 rounded-3xl p-8">
+          <div className="bg-gradient-to-r from-pink-100 to-purple-100 dark:from-pink-900/30 dark:to-purple-900/30 rounded-3xl p-8 backdrop-blur">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
               Let's Create Something Amazing Together! ✨
             </h3>
@@ -81,7 +81,7 @@ const ContactPage = () => {
               Whether it's a quick chat about design, a collaboration opportunity, or just to say hi - I'm all ears! 🐰
             </p>
             <div className="flex justify-center items-center space-x-2">
-              <span>💌</span>
+              <span className="animate-pulse">💌</span>
               <span className="text-gray-700 dark:text-gray-300">Response time: Usually within 24 hours</span>
             </div>
           </div>
@@ -92,9 +92,9 @@ const ContactPage = () => {
             "Made with love, Figma, and one too many Ctrl+Zs."
           </p>
           <div className="flex justify-center space-x-2 mt-4">
-            <span>🐰</span>
-            <span>💖</span>
-            <span>✨</span>
+            <span className="animate-bounce">🐰</span>
+            <span className="animate-bounce delay-100">💖</span>
+            <span className="animate-bounce delay-200">✨</span>
           </div>
         </footer>
       </div>
