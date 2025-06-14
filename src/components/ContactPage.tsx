@@ -34,7 +34,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-24 pb-16 px-6">
+    <div className="min-h-screen pt-24 pb-16 px-6 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 dark:from-amber-900/20 dark:via-yellow-900/20 dark:to-orange-900/20">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-sunny-500 to-golden-600 bg-clip-text text-transparent mb-6">
@@ -52,7 +52,7 @@ const ContactPage = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white/80 dark:bg-gray-800/80 rounded-3xl p-6 shadow-xl block"
+              className="bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-xl block"
             >
               <div className="flex items-center space-x-4 mb-4">
                 <div className={`p-4 bg-gradient-to-r ${link.color} rounded-2xl text-2xl`}>
