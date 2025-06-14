@@ -9,8 +9,8 @@ const WorkPage = () => {
       description: "A student-focused budgeting app designed to help college students track, plan, and thrive financially.",
       keywords: ["student-first", "track, plan, thrive", "UI/UX for broke buddies everywhere"],
       date: "April 2024",
-      color: "from-green-400 to-blue-500",
-      bgColor: "from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20",
+      color: "from-sunny-400 to-golden-500",
+      bgColor: "from-sunny-50 to-golden-50 dark:from-sunny-900/20 dark:to-golden-900/20",
       icon: "💰",
       prototype: "#"
     },
@@ -20,8 +20,8 @@ const WorkPage = () => {
       description: "A VR app built to help people with anxiety and depression through calming environments. Built during final year as a graduation project.",
       keywords: ["healing through design", "VR calm spaces", "serious UX for serious peace"],
       date: "2025",
-      color: "from-purple-400 to-pink-500",
-      bgColor: "from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20",
+      color: "from-golden-400 to-warm-500",
+      bgColor: "from-golden-50 to-warm-50 dark:from-golden-900/20 dark:to-warm-900/20",
       icon: "🧘",
       prototype: "#"
     }
@@ -30,8 +30,8 @@ const WorkPage = () => {
   return (
     <div className="min-h-screen pt-24 pb-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-6">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-sunny-500 to-golden-600 bg-clip-text text-transparent mb-6">
             My Work
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -81,7 +81,7 @@ const WorkPage = () => {
 
                 <button 
                   onClick={() => window.open(project.prototype, '_blank')}
-                  className={`w-full bg-gradient-to-r ${project.color} text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 group-hover:animate-pulse`}
+                  className={`w-full bg-gradient-to-r ${project.color} text-white py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105`}
                 >
                   View Interactive Prototype →
                 </button>
@@ -99,9 +99,9 @@ const WorkPage = () => {
               Currently brewing some exciting new ideas in my design lab...
             </p>
             <div className="flex justify-center space-x-4 mt-6">
-              <div className="w-3 h-3 bg-pink-400 rounded-full animate-bounce"></div>
-              <div className="w-3 h-3 bg-purple-400 rounded-full animate-bounce delay-100"></div>
-              <div className="w-3 h-3 bg-blue-400 rounded-full animate-bounce delay-200"></div>
+              <div className="w-3 h-3 bg-sunny-400 rounded-full"></div>
+              <div className="w-3 h-3 bg-golden-400 rounded-full"></div>
+              <div className="w-3 h-3 bg-warm-400 rounded-full"></div>
             </div>
           </div>
         </div>

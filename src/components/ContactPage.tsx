@@ -8,36 +8,36 @@ const ContactPage = () => {
       icon: "📞",
       url: "https://wa.me/917083245713",
       description: "Quick chat? I'm usually online!",
-      color: "from-green-400 to-green-600"
+      color: "from-sunny-400 to-golden-500"
     },
     {
       platform: "Email",
       icon: "📧",
       url: "mailto:padmakaar.work@gmail.com",
       description: "For the formal stuff",
-      color: "from-blue-400 to-blue-600"
+      color: "from-golden-400 to-warm-500"
     },
     {
       platform: "LinkedIn",
       icon: "💼",
       url: "https://linkedin.com/in/padmakaarwork",
       description: "Let's connect professionally",
-      color: "from-indigo-400 to-indigo-600"
+      color: "from-warm-400 to-sunny-500"
     },
     {
       platform: "Resume",
       icon: "📄",
       url: "#",
       description: "All the boring details",
-      color: "from-purple-400 to-purple-600"
+      color: "from-sunny-500 to-golden-600"
     }
   ];
 
   return (
     <div className="min-h-screen pt-24 pb-16 px-6">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-6">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-sunny-500 to-golden-600 bg-clip-text text-transparent mb-6">
             Let's Vibe
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8">
@@ -73,7 +73,7 @@ const ContactPage = () => {
         </div>
 
         <div className="text-center">
-          <div className="bg-gradient-to-r from-pink-100 to-purple-100 dark:from-pink-900/30 dark:to-purple-900/30 rounded-3xl p-8 backdrop-blur">
+          <div className="bg-gradient-to-r from-sunny-100 to-golden-100 dark:from-sunny-900/30 dark:to-golden-900/30 rounded-3xl p-8 backdrop-blur">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
               Let's Create Something Amazing Together! ✨
             </h3>
@@ -81,7 +81,7 @@ const ContactPage = () => {
               Whether it's a quick chat about design, a collaboration opportunity, or just to say hi - I'm all ears! 🐰
             </p>
             <div className="flex justify-center items-center space-x-2">
-              <span className="animate-pulse">💌</span>
+              <span>💌</span>
               <span className="text-gray-700 dark:text-gray-300">Response time: Usually within 24 hours</span>
             </div>
           </div>
@@ -92,9 +92,9 @@ const ContactPage = () => {
             "Made with love, Figma, and one too many Ctrl+Zs."
           </p>
           <div className="flex justify-center space-x-2 mt-4">
-            <span className="animate-bounce">🐰</span>
-            <span className="animate-bounce delay-100">💖</span>
-            <span className="animate-bounce delay-200">✨</span>
+            <span>🐰</span>
+            <span>💖</span>
+            <span>✨</span>
           </div>
         </footer>
       </div>
