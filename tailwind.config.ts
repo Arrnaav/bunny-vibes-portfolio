@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,6 +61,43 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom warm color palette
+				rose: {
+					50: '#fff1f2',
+					100: '#ffe4e6',
+					200: '#fecdd3',
+					300: '#fda4af',
+					400: '#fb7185',
+					500: '#f43f5e',
+					600: '#e11d48',
+					700: '#be123c',
+					800: '#9f1239',
+					900: '#881337'
+				},
+				coral: {
+					50: '#fff5f5',
+					100: '#ffebeb',
+					200: '#ffd6d6',
+					300: '#ffb3b3',
+					400: '#ff8080',
+					500: '#ff4d4d',
+					600: '#e62e2e',
+					700: '#cc1f1f',
+					800: '#b31a1a',
+					900: '#991515'
+				},
+				peach: {
+					50: '#fff7ed',
+					100: '#ffedd5',
+					200: '#fed7aa',
+					300: '#fdba74',
+					400: '#fb923c',
+					500: '#f97316',
+					600: '#ea580c',
+					700: '#c2410c',
+					800: '#9a3412',
+					900: '#7c2d12'
 				}
 			},
 			borderRadius: {

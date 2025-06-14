@@ -7,6 +7,7 @@ import AboutPage from '../components/AboutPage';
 import WorkPage from '../components/WorkPage';
 import ContactPage from '../components/ContactPage';
 import Navigation from '../components/Navigation';
+import BackgroundElements from '../components/BackgroundElements';
 import { ThemeProvider } from '../context/ThemeContext';
 
 const Index = () => {
@@ -26,7 +27,8 @@ const Index = () => {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen transition-colors duration-300 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 dark:from-orange-900 dark:via-amber-900 dark:to-yellow-800">
+      <div className="min-h-screen transition-colors duration-300 bg-gradient-to-br from-rose-50 via-coral-50 to-peach-50 dark:from-rose-900 dark:via-coral-900 dark:to-peach-800 relative overflow-hidden">
+        <BackgroundElements />
         <Navigation />
         <Routes>
           <Route path="/" element={<Homepage />} />
