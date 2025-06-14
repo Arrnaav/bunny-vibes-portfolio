@@ -26,7 +26,7 @@ const Index = () => {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen transition-colors duration-300 bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-purple-900 dark:to-gray-800">
+      <div className="min-h-screen transition-colors duration-300 bg-gradient-to-br from-orange-50 via-amber-50 to-red-50 dark:from-gray-900 dark:via-red-900 dark:to-gray-800">
         <Navigation />
         <Routes>
           <Route path="/" element={<Homepage />} />
