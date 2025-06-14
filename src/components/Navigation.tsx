@@ -16,9 +16,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-pink-200/50 dark:border-purple-800/50">
+    <nav className="fixed top-0 left-0 right-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-orange-200/50 dark:border-amber-800/50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-transform">
+        <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent hover:scale-105 transition-transform">
           BUNNY ✨
         </Link>
         
@@ -30,8 +30,8 @@ const Navigation = () => {
                 to={item.path}
                 className={`px-4 py-2 rounded-full transition-all hover:scale-105 ${
                   location.pathname === item.path
-                    ? 'bg-gradient-to-r from-pink-400 to-purple-500 text-white shadow-lg'
-                    : 'text-gray-700 dark:text-gray-300 hover:bg-pink-100 dark:hover:bg-purple-900/50'
+                    ? 'bg-gradient-to-r from-orange-400 to-amber-500 text-white shadow-lg'
+                    : 'text-gray-700 dark:text-gray-300 hover:bg-orange-100 dark:hover:bg-amber-900/50'
                 }`}
               >
                 {item.label}
@@ -41,7 +41,7 @@ const Navigation = () => {
           
           <button
             onClick={toggleTheme}
-            className="p-3 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 text-white hover:scale-110 transition-all shadow-lg hover:shadow-xl"
+            className="p-3 rounded-full bg-gradient-to-r from-orange-400 to-amber-500 text-white hover:scale-110 transition-all shadow-lg hover:shadow-xl"
           >
             {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>

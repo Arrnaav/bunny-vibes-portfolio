@@ -14,7 +14,7 @@ const FloatingBunny = () => {
         <div className="relative">
           <div className="text-4xl">{isHovered ? '🐰💭' : '🐰'}</div>
           {isHovered && (
-            <div className="absolute -top-16 -left-20 bg-white dark:bg-gray-800 p-3 rounded-lg shadow-xl border border-pink-200 dark:border-purple-700 whitespace-nowrap animate-scale-in">
+            <div className="absolute -top-16 -left-20 bg-white dark:bg-gray-800 p-3 rounded-lg shadow-xl border border-orange-200 dark:border-amber-700 whitespace-nowrap animate-scale-in">
               <p className="text-sm text-gray-700 dark:text-gray-300">Hop hop! 🌟</p>
             </div>
           )}
